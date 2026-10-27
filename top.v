@@ -16,8 +16,6 @@ module top(
         .data(sw[15:8]),
         .store(btnC),
         .addr(sw[7:6]),
-        .memory(led[15:8])
+        .memory(led)
     );
-
-    assign led[7:2] = 6'b0;
 endmodule
