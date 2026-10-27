@@ -28,4 +28,7 @@ module memory_system(
             );
         end
     endgenerate
+
+    // Display the selected byte and leave the D-latch LEDs undriven here.
+    assign memory = {in_mem[addr], 6'b0, 2'bzz};
 endmodule
